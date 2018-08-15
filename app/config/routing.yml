@@ -1,0 +1,11 @@
+app:
+    resource: "@AppBundle/Controller/DefaultController.php"
+    type: annotation
+
+users:
+      resource: AppBundle\Controller\UserController
+      type: rest
+
+auth-tokens:
+    resource: AppBundle\Controller\AuthTokenController
+    type:     rest

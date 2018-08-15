@@ -1,0 +1,44 @@
+AppBundle\Entity\User:
+    constraints:
+        - Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity: email
+    properties:
+        email:
+            - NotBlank: ~
+            - Email: ~
+        plainPassword:
+            - NotBlank: { groups: [New, FullUpdate] }
+            - Type: string
+            - Length:
+                min: 4
+                max: 50
+        nom:
+            - NotBlank: ~
+            - Type: string
+        prenom:
+            - NotBlank: ~
+            - Type: string
+        nomOrganisation:
+            - NotBlank: ~
+            - Type: string
+        tel:
+            - NotBlank: ~
+            - Type: integer
+        telPro:
+            - Type: integer
+        emailPro:
+            - Email: ~
+        aproposArbitre:
+            - Type: string
+        cvArbitre:
+            - Type: blob
+        idPriv:
+            - NotBlank: ~
+            - Type: integer
+AppBundle\Entity\Credentials:
+    properties:
+        login:
+            - NotBlank: ~
+            - Type: string
+        password:
+            - NotBlank: ~
+            - Type: string

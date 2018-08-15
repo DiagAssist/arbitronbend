@@ -1,0 +1,36 @@
+AppBundle\Entity\User:
+    attributes:
+        id:
+            groups: ['user', 'auth-token']
+        email:
+            groups: ['user', 'auth-token']
+        password:
+            groups: ['user', 'auth-token']
+        nom:
+            groups: ['user', 'auth-token']
+        prenom:
+            groups: ['user', 'auth-token']
+        nomOrganisation:
+            groups: ['user', 'auth-token']
+        tel:
+            groups: ['user', 'auth-token']
+        telPro:
+            groups: ['user', 'auth-token']
+        emailPro:
+            groups: ['user', 'auth-token']
+        aproposArbitre:
+            groups: ['user', 'auth-token']
+        cvArbitre:
+            groups: ['user', 'auth-token']
+        idPriv:
+            groups: ['user', 'auth-token']
+AppBundle\Entity\AuthToken:
+    attributes:
+        id:
+            groups: ['auth-token']
+        value:
+            groups: ['auth-token']
+        createdAt:
+            groups: ['auth-token']
+        user:
+            groups: ['auth-token']

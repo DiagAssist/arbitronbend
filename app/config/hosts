@@ -1,5 +1,7 @@
 127.0.1.1 fadi-Inspiron-7577
 127.0.0.1 arbitronbend.io
+185.163.124.183 www.arbitronb.io
+
 
 # The following lines are desirable for IPv6 capable hosts
 ::1     ip6-localhost ip6-loopback
